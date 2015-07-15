@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>IHomer.nl</title>
+    <link rel="stylesheet" href="/css/main_css_file.css">
+</head>
+<body>
+<section class="content">
+
+    <ul>
+        {% for post in site.posts %}
+        <li>
+            <a href="{{ post.url }}">{{ post.title }}</a>
+        </li>
+        {% endfor %}
+    </ul>
+
+    {{ content }}
+
+
+</section>
+</body>
+</html>
