@@ -1,16 +1,22 @@
 # Site settings
-title: Your awesome title
-email: your-email@domain.com
-description: > # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
-baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://yourdomain.com" # the base hostname & protocol for your site
-twitter_username: jekyllrb
-github_username:  jekyll
+title: IHomer
+tagline: thuis in IT
+email: info@ihomer.nl
+description: >
+  IHomer is een IT-bedrijf met als motto 'een beetje anders, een groot verschil'. Vanuit de kracht van individuen,
+  gebruik makend van de mogelijkheden die ICT biedt en rekening houdend met de maatschappij is een nieuwe en
+  inspirerende werkvorm ontstaan.
+baseurl: ""
+url: https://ihomer.github.io # the base hostname & protocol for your site
 
 # Build settings
-markdown: kramdown
-
-exclude: [".gitignore", "Gemfile", "Gemfile.lock", ".editorconfig"]
+markdown: redcarpet
+highlighter: pygments
+exclude:
+  - .gitignore
+  - Gemfile
+  - Gemfile.lock
+  - .editorconfig
+gems:
+  - jekyll-sitemap
+  - jekyll-feed
