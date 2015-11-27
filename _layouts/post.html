@@ -1,16 +1,15 @@
-<!DOCTYPE html>
-<html>
-<head>
-    <meta charset="utf-8">
-    <title>IHomer.nl</title>
-    <link rel="stylesheet" href="/css/main_css_file.css">
-</head>
-<body>
-<section class="content">
+---
+layout: default
+---
+<div class="post">
 
+  <header class="post-header">
+    <h1 class="post-title">{{ page.title }}</h1>
+    <p class="post-meta">{{ page.date | date: "%b %-d, %Y" }}{% if page.author %} • {{ page.author }}{% endif %}{% if page.meta %} • {{ page.meta }}{% endif %}</p>
+  </header>
+
+  <article class="post-content">
     {{ content }}
+  </article>
 
-
-</section>
-</body>
-</html>
+</div>
