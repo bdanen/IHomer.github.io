@@ -1,0 +1,44 @@
+.section-number {
+  font-family: monaco, Consolas, 'Lucida Console', monospace;
+  font-size: 14px;
+  color: $section-title-color;
+}
+
+.section-title, header {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  color: $section-title-color;
+  font-weight: 300;
+  font-style: italic;
+  border-bottom: 1px solid $section-title-color;
+  margin-bottom: 50px;
+}
+
+h1 {
+  font-family: 'Abel', sans-serif;
+  font-size: 25px;
+  color: $title-color;
+  letter-spacing: 5.9px;
+  text-transform: uppercase;
+}
+
+p {
+  font-family: 'EB Garamond', serif;
+  font-size: 16px;
+  line-height: 32px;
+  color: #6A6A6A;
+}
+
+.navigation-small-title {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  color: #808080;
+  font-weight: 300;
+}
+
+.navigation-title {
+  font-family: 'Abel', sans-serif;
+  font-size: 25px;
+  color: $title-color;
+  letter-spacing: 4.7px;
+}

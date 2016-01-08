@@ -10,7 +10,8 @@
 
     <aside></aside>
     <main>
-      {{content}}
+      <header>{{page.title}}</header>
+      <article class="{{page.title | replace: ' ', '_' | downcase}}">{{content}}</article>
     </main>
   </body>
 

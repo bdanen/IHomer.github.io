@@ -1,7 +1,11 @@
+$screen-tablet-min: 768px;
 $screen-mobile-max: 991px;
-$screen-small-desktop-min: 992px;
-$screen-small-desktop-max: 1199px;
-$screen-medium-desktop-min: 1200px;
-$screen-medium-desktop-max: 1919px;
+$screen-desktop-min: 992px;
+$screen-desktop-max: 1919px;
 $screen-large-desktop-min: 1920px;
+$main-fixed-width: (0.4 * #{$screen-large-desktop-min});
+$aside-large-desktop-width: calc(100% - (#{$main-fixed-width}));
 $background-sticky-panel: linear-gradient(to bottom, #B8B9C0, #DDDEE6);
+
+$section-title-color: #CCC;
+$title-color: #000;
