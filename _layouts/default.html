@@ -11,7 +11,10 @@
     <aside></aside>
     <main>
       <header>{{page.title}}</header>
-      <article class="{{page.title | replace: ' ', '_' | downcase}}">{{content}}</article>
+
+      {{content}}
+
+      <footer>Table of contents</footer>
     </main>
   </body>
 

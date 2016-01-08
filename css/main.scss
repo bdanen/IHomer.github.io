@@ -27,11 +27,26 @@ html, body {
   }
 }
 
+header, footer {
+  border-bottom: 1px solid $section-title-color;
+}
+
+header::before {
+  content: "01. ";
+  @include section-header();
+}
+
+footer::before {
+  content: "02. ";
+  @include section-header();
+}
+
 article {
 
   //@media screen and (min-width: $screen-tablet-min) { // TODO decide whether to show on mobile
   position: relative;
   padding-left: 60px;
+  margin: 50px 0;
 
   &.ihomer_philosophy::before {
     position: absolute;

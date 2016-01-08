@@ -7,5 +7,7 @@ $main-fixed-width: (0.4 * #{$screen-large-desktop-min});
 $aside-large-desktop-width: calc(100% - (#{$main-fixed-width}));
 $background-sticky-panel: linear-gradient(to bottom, #B8B9C0, #DDDEE6);
 
+$section-title-font: italic 300 14px 'Open Sans', sans-serif;
+$section-number-font: normal 400 14px monaco, Consolas, 'Lucida Console', monospace;
 $section-title-color: #CCC;
 $title-color: #000;

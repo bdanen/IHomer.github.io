@@ -1,17 +1,11 @@
-.section-number {
-  font-family: monaco, Consolas, 'Lucida Console', monospace;
-  font-size: 14px;
+@mixin section-header {
+  font: $section-number-font;
   color: $section-title-color;
 }
 
-.section-title, header {
-  font-family: 'Open Sans', sans-serif;
-  font-size: 14px;
+.section-title, header, footer {
+  font: $section-title-font;
   color: $section-title-color;
-  font-weight: 300;
-  font-style: italic;
-  border-bottom: 1px solid $section-title-color;
-  margin-bottom: 50px;
 }
 
 h1 {
