@@ -4,6 +4,7 @@
 @import "normalize";
 @import "syntax";
 @import "variables";
+@import "mixins";
 @import "layout";
 @import "fonts";
 
@@ -49,7 +50,7 @@ section {
     @extend h1;
 
     &.map::before {
-
+      @include icon-before('location');
     }
   }
 
@@ -75,14 +76,7 @@ article {
   //@media screen and (min-width: $screen-tablet-min) { // TODO decide whether to show on mobile
 
   &#ihomer_philosophy::before {
-    position: absolute;
-    left: 0;
-    width: 50px;
-    height: 50px;
-    content: "";
-    background: url('/icons/png/icon_introduction.png');
-    background-image: url('/icons/svg/icon_introduction.svg');
-    background-repeat: no-repeat;
+    @include icon-before('introduction');
   }
   //}
 }

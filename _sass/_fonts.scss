@@ -1,14 +1,3 @@
-@mixin section-header {
-  font: $section-number-font;
-  color: $section-title-color;
-}
-
-@mixin section-title {
-  font: $section-title-font;
-  color: $section-title-color;
-  border-bottom: 1px solid $section-title-color;
-}
-
 h1 {
   font-family: 'Abel', sans-serif;
   font-size: 25px;
