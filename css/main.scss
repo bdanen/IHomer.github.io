@@ -27,28 +27,54 @@ html, body {
   }
 }
 
-header, footer {
-  border-bottom: 1px solid $section-title-color;
+main > header {
+  @include section-title();
 }
 
-header::before {
+main > header::before {
   content: "01. ";
   @include section-header();
 }
 
-footer::before {
-  content: "02. ";
-  @include section-header();
+section {
+  & > header {
+    @include section-title();
+    margin: 50px 0;
+
+    &::before {
+      @include section-header();
+    }
+  }
+  & > h2 {
+    @extend h1;
+
+    &.map::before {
+
+    }
+  }
+
+  &#toc > header::before {
+    content: "02. ";
+  }
+  &#contact > header::before {
+    content: "03. ";
+  }
+}
+
+article, section {
+  margin: 50px 0;
+}
+
+article, section > *:not(header) {
+  padding-left: 60px;
+  position: relative;
 }
 
 article {
 
   //@media screen and (min-width: $screen-tablet-min) { // TODO decide whether to show on mobile
-  position: relative;
-  padding-left: 60px;
-  margin: 50px 0;
 
-  &.ihomer_philosophy::before {
+  &#ihomer_philosophy::before {
     position: absolute;
     left: 0;
     width: 50px;

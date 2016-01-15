@@ -3,9 +3,10 @@
   color: $section-title-color;
 }
 
-.section-title, header, footer {
+@mixin section-title {
   font: $section-title-font;
   color: $section-title-color;
+  border-bottom: 1px solid $section-title-color;
 }
 
 h1 {
