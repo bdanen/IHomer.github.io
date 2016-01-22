@@ -10,6 +10,10 @@
 
 * {
   box-sizing: border-box;
+
+  &::before {
+    box-sizing: border-box;
+  }
 }
 
 html, body {
@@ -54,9 +58,28 @@ section {
     }
   }
 
-  &#toc > header::before {
-    content: "02. ";
+  &#toc {
+    > header::before {
+      content: "02. ";
+    }
+
+    h2 {
+      margin: 50px 0;
+
+      &::before {
+        @include list-before();
+        padding-left: 10px;
+        color: $list-before-color;
+        font-weight: $light-font-weight;
+        content: "\ff0d"; // large minus sign
+      }
+
+      &:hover::before {
+        content: "\ff0b"; // large plus sign
+      }
+    }
   }
+
   &#contact > header::before {
     content: "03. ";
   }
