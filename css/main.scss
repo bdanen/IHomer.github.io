@@ -50,7 +50,7 @@ section {
       @include section-header();
     }
   }
-  & > h2 {
+  & h2 {
     @extend h1;
 
     &.map::before {
@@ -63,19 +63,48 @@ section {
       content: "02. ";
     }
 
-    h2 {
+    > div {
       margin: 50px 0;
+      display: flex;
 
-      &::before {
-        @include list-before();
-        color: $list-before-color;
-        font-weight: $light-font-weight;
-        content: "\ff0d"; // large minus sign
-      }
+      > div {
+        flex: 1;
 
-      &:hover::before {
-        content: "\ff0b"; // large plus sign
+        &:first-child {
+          flex: 2;
+
+          &::before {
+            @include list-before();
+            color: $list-before-color;
+            font-weight: $light-font-weight;
+            content: "\ff0d"; // large minus sign
+          }
+
+          &:hover {
+            &::before {
+              content: "\ff0b"; // large plus sign
+            }
+
+            h3 {
+              display: block;
+            }
+          }
+
+          h3 {
+            display: none;
+          }
+        }
       }
+    }
+
+    h2, h3 {
+      margin: 0;
+    }
+
+    h3 {
+      @include navigation-small-title;
+      position: absolute;
+      bottom: 100%;
     }
   }
 

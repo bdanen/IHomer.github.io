@@ -23,3 +23,10 @@
   background-image: url('#{$icon-dir}/svg/icon_#{$icon}.svg');
   background-repeat: no-repeat;
 }
+
+@mixin navigation-small-title {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 14px;
+  color: #808080;
+  font-weight: 300;
+}
