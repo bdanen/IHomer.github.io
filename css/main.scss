@@ -67,28 +67,35 @@ section {
       margin: 50px 0;
       display: flex;
 
+      &::before {
+        @include list-before();
+        color: $list-before-color;
+        font-weight: $light-font-weight;
+        content: "\ff0d"; // large minus sign
+      }
+
+
+      &:hover {
+        &::before {
+          content: "\ff0b"; // large plus sign
+        }
+
+        > div:first-child h3 {
+          display: block;
+        }
+
+        > div:not(:first-child) {
+          display: block;
+        }
+      }
+
       > div {
+        display: none;
         flex: 1;
 
         &:first-child {
+          display: block;
           flex: 2;
-
-          &::before {
-            @include list-before();
-            color: $list-before-color;
-            font-weight: $light-font-weight;
-            content: "\ff0d"; // large minus sign
-          }
-
-          &:hover {
-            &::before {
-              content: "\ff0b"; // large plus sign
-            }
-
-            h3 {
-              display: block;
-            }
-          }
 
           h3 {
             display: none;
