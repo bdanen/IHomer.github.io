@@ -20,3 +20,4 @@ exclude:
 gems:
   - jekyll-sitemap
   - jekyll-feed
+  - jekyll-coffeescript
