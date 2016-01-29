@@ -137,3 +137,9 @@ article {
   }
   //}
 }
+
+aside {
+  img:not(:first-child) {
+    display: none;
+  }
+}
