@@ -2,7 +2,7 @@
 ---
 $ ->
   _window = $(window)
-  animation_trigger_elements = $('article p')
+  animation_trigger_elements = $('article p[data-image-toggle]')
 
   check_if_in_view = ->
     window_height = _window.height()
@@ -17,7 +17,7 @@ $ ->
 
       if ((element_bottom_position >= window_top_position) and (element_top_position <= window_bottom_position))
         $('aside img.in-view').removeClass 'in-view'
-        $('aside img[data-image=' + element.data('image') + ']').addClass 'in-view'
+        $('aside img[data-image=' + element.data('image-toggle') + ']').addClass 'in-view'
         false
 
   _window.on 'scroll resize', check_if_in_view

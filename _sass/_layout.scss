@@ -27,9 +27,10 @@ aside {
   align-items: center;
   justify-content: center;
 
-  & > * {
-    max-width: 80%;
-    max-height: 80%;
+  & > div {
+    position: relative;
+    width: 80%;
+    height: 80%;
   }
 
   & img {

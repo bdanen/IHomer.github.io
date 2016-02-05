@@ -12,7 +12,11 @@ work: TODO
     <div id="background">
     </div>
 
-    <aside>{% include_relative context/{{page.context}} %}</aside>
+    <aside>
+      <div>
+        {% include_relative context/{{page.context}} %}
+      </div>
+    </aside>
     <main>
       <header>{{page.title}}</header>
 
