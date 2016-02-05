@@ -74,7 +74,7 @@ section {
       }
 
 
-      &:hover {
+      &.hover {
         &::before {
           content: "\ff0b"; // large plus sign
         }
@@ -101,6 +101,11 @@ section {
           }
         }
       }
+    }
+
+    h2 {
+      display: inline;
+      cursor: pointer;
     }
 
     h2, h3 {

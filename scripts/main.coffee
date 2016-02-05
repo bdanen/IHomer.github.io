@@ -20,5 +20,9 @@ $ ->
         $('aside img[data-image=' + element.data('image-toggle') + ']').addClass 'in-view'
         false
 
-  _window.on 'scroll resize', check_if_in_view
-  _window.trigger 'scroll'
+  $('#toc h2.toggle').hover ->
+    $(this).parents('div[data-toggle-target=' + $(this).data('toggle') + ']').toggleClass 'hover'
+
+  if (screen and screen.width > 991)
+    _window.on 'scroll resize', check_if_in_view
+    _window.trigger 'scroll'
