@@ -1,8 +1,6 @@
 ---
 ---
 $ ->
-  $('aside img[data-image]').last().addClass('in-view') if $('aside img[data-image].in-view').size() is 0
-
   _window = $(window)
   animation_trigger_elements = $('article p[data-image-toggle]')
 
@@ -21,6 +19,8 @@ $ ->
         $('aside img.in-view').removeClass 'in-view'
         $('aside img[data-image=' + element.data('image-toggle') + ']').addClass 'in-view'
         false
+
+    $('aside img[data-image]').last().addClass('in-view') if $('aside img[data-image].in-view').size() is 0
 
   $('#toc h2.toggle').hover ->
     $(this).parents('div[data-toggle-target=' + $(this).data('toggle') + ']').toggleClass 'hover'
