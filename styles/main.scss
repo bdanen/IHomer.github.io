@@ -160,5 +160,10 @@ aside {
       opacity: 1;
       transition: opacity 500ms ease;
     }
+
+    &:not([data-image]) {
+      opacity: 1;
+      transition: unset;
+    }
   }
 }

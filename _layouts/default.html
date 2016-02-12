@@ -14,7 +14,11 @@ work: TODO
 
     <aside>
       <div>
-        {% include_relative context/{{page.context}} %}
+        {% if page.context %}
+        {% include context/{{page.context}} %}
+        {% else %}
+        {% include context/default.html %}
+        {% endif %}
       </div>
     </aside>
     <main>
