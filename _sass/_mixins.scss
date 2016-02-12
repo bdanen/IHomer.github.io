@@ -3,10 +3,14 @@
   color: $section-title-color;
 }
 
+@mixin section-divider($pos: 'bottom') {
+  border-#{$pos}: 1px solid $section-title-color;
+}
+
 @mixin section-title {
   font: $section-title-font;
   color: $section-title-color;
-  border-bottom: 1px solid $section-title-color;
+  @include section-divider();
 }
 
 @mixin list-before() {

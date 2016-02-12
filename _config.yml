@@ -12,7 +12,6 @@ url: https://ihomer.github.io # the base hostname & protocol for your site
 # Build settings
 markdown: redcarpet
 highlighter: rouge
-permalink: none
 exclude:
   - .gitignore
   - Gemfile

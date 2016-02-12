@@ -122,6 +122,14 @@ section {
   &#contact > header::before {
     content: "03. ";
   }
+
+  &#copyright {
+    @include section-divider(top);
+    padding-top: 50px;
+    margin-bottom: 0;
+    font: $section-title-font;
+    color: $section-title-color;
+  }
 }
 
 article, section {
