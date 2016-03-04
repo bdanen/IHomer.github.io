@@ -8,6 +8,8 @@ description: >
   inspirerende werkvorm ontstaan.
 baseurl: ""
 url: https://ihomer.github.io # the base hostname & protocol for your site
+crew: 26
+work: TODO
 
 # Build settings
 markdown: redcarpet

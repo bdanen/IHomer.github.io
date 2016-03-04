@@ -26,66 +26,7 @@ work: TODO
 
       {{content}}
 
-      <footer>
-        <section id="toc">
-          <header>Table of contents</header>
-
-          <div data-toggle-target="crew">
-            <div>
-              <h3>{{page.crew}}</h3>
-              <h2 class="toggle" data-toggle="crew">Crew</h2>
-            </div>
-
-            <div>
-              <h3>{{page.crew}}</h3>
-              <h2>Crew</h2>
-            </div>
-            <div>
-              <h3>{{page.crew}}</h3>
-              <h2>Crew</h2>
-            </div>
-          </div>
-
-          <div data-toggle-target="work">
-            <div>
-              <h3>{{page.work}}</h3>
-              <h2 class="toggle" data-toggle="work">Work</h2>
-            </div>
-
-            <div>
-              <h3>{{page.work}}</h3>
-              <h2>Work</h2>
-            </div>
-            <div>
-              <h3>{{page.work}}</h3>
-              <h2>Work</h2>
-            </div>
-          </div>
-
-          <div data-toggle-target="anders">
-            <div>
-              <h3>{{page.anders}}</h3>
-              <h2 class="toggle" data-toggle="anders">Een beetje anders</h2>
-            </div>
-          </div>
-        </section>
-        <section id="contact">
-          <header>Contact</header>
-          <h2 class="map">Rijen</h2>
-          <p>
-            Hoofdstraat 27<br/>
-            5121 JA&nbsp;&nbsp;Rijen
-          </p>
-          <h2>Valkenswaard</h2>
-          <p>
-            John F. Kennedylaan 3<br/>
-            5555 XC&nbsp;&nbsp;Valkenswaard
-          </p>
-        </section>
-        <section id="copyright">
-          &copy; 2015-{{site.time | date: '%Y' }} IHOMER ALL RIGHTS RESERVED
-        </section>
-      </footer>
+      {% include toc.html %}
     </main>
 
     {% include footer.html %}
