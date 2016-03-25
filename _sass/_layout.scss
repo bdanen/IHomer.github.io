@@ -37,9 +37,7 @@ aside {
     box-shadow: 0 0 7px rgba(0, 0, 0, .5);
   }
 
-  @media screen and (max-width: $screen-mobile-max) {
-    display: none;
-  }
+  @include hidden-phone();
 
   @media screen and (min-width: $screen-desktop-min) and (max-width: $screen-desktop-max) {
     width: 60%;
@@ -48,4 +46,13 @@ aside {
   @media screen and (min-width: $screen-large-desktop-min) {
     width: $aside-large-desktop-width;
   }
+}
+
+#background {
+  background: $background-gray-gradient;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+
+  @include hidden-phone();
 }

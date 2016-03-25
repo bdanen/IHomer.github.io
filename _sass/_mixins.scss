@@ -1,3 +1,9 @@
+@mixin hidden-phone {
+  @media screen and (max-width: $screen-mobile-max) {
+    display: none !important;
+  }
+}
+
 @mixin section-header {
   font: $section-number-font;
   color: $section-title-color;
