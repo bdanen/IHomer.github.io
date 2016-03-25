@@ -8,6 +8,21 @@ main {
 
   @media screen and (max-width: $screen-mobile-max) {
     width: 100%;
+    background: $background-gray-gradient;
+
+    & > header {
+      color: $other-color !important;
+      border-bottom-color: $other-color !important;
+
+      &::before {
+        color: $other-color !important;
+      }
+    }
+
+    section#copyright {
+      border-top-color: $other-color;
+      color: $other-color;
+    }
   }
 
   @media screen and (min-width: $screen-desktop-min) and (max-width: $screen-desktop-max) {
