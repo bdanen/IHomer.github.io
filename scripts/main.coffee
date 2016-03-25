@@ -25,6 +25,17 @@ $ ->
   $('#toc h2.toggle').hover ->
     $(this).parents('div[data-toggle-target=' + $(this).data('toggle') + ']').toggleClass 'hover'
 
-  if (screen and screen.width > 991)
+  add_menu_animations = ->
+    toggled_items = $('#menu, #mask')
+    $('#menu-show').on 'click', (e) ->
+      e.preventDefault()
+      $(toggled_items).addClass 'is-active'
+    $('#menu-close, #mask').on 'click', (e) ->
+      e.preventDefault()
+      $(toggled_items).removeClass 'is-active'
+
+  if (screen and screen.width >= 992)
     _window.on 'scroll resize', check_if_in_view
     _window.trigger 'scroll'
+
+  add_menu_animations()
