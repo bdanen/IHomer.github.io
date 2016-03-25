@@ -68,13 +68,13 @@ main {
   max-width: $screen-tablet-min;
   min-height: 100%;
   padding-bottom: 1px;
-
   position: fixed;
   transition: transform 0.3s;
   z-index: 200;
   top: 0;
   left: 0;
   transform: translateX(-100%);
+  overflow-y: scroll;
 
   &.is-active {
     transform: translateX(0);
