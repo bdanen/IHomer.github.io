@@ -1,3 +1,9 @@
+body {
+  @media screen and (max-width: $screen-mobile-max) {
+    background: $background-gray-gradient;
+  }
+}
+
 main {
   position: relative;
   margin-left: auto;
@@ -8,7 +14,7 @@ main {
 
   @media screen and (max-width: $screen-mobile-max) {
     width: 100%;
-    background: $background-gray-gradient;
+    background: transparent;
 
     & > header {
       color: $other-color !important;
@@ -31,6 +37,34 @@ main {
 
   @media screen and (min-width: $screen-large-desktop-min) {
     width: calc(#{$main-fixed-width});
+  }
+}
+
+.top-bar {
+  @include visible-phone();
+  position: relative;
+  height: 60px;
+  padding: 10px 0;
+
+  .logo, .menu-button {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+  }
+
+  .logo {
+    background: url('/favicon-96x96.png') no-repeat left top;
+    background-size: contain;
+    left: 10px;
+  }
+
+  .menu-button {
+    right: 10px;
+    padding-top: 4px;
+
+    & > i {
+      font-size: 32px;
+    }
   }
 }
 
