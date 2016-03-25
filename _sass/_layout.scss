@@ -17,17 +17,17 @@ main {
     background: transparent;
 
     & > header {
-      color: $other-color !important;
-      border-bottom-color: $other-color !important;
+      color: $body-color !important;
+      border-bottom-color: $body-color !important;
 
       &::before {
-        color: $other-color !important;
+        color: $body-color !important;
       }
     }
 
     section#copyright {
-      border-top-color: $other-color;
-      color: $other-color;
+      border-top-color: $body-color;
+      color: $body-color;
     }
   }
 

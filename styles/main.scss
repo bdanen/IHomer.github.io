@@ -20,6 +20,10 @@ html, body {
   height: 100%;
 }
 
+p a {
+  color: $body-color;
+}
+
 .hidden-phone {
   @include hidden-phone();
 }
@@ -140,6 +144,17 @@ article {
 
   &#ihomer_philosophy::before {
     @include icon-before('introduction');
+  }
+
+  &#contact_information {
+
+    & + footer > section#contact {
+      @include hidden-desktop();
+    }
+
+    &::before {
+      @include icon-before('location');
+    }
   }
   //}
 }

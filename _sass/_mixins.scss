@@ -14,6 +14,12 @@
   }
 }
 
+@mixin hidden-desktop {
+  @media screen and (min-width: $screen-desktop-min) {
+    display: none !important;
+  }
+}
+
 @mixin section-header {
   font: $section-number-font;
   color: $section-title-color;
