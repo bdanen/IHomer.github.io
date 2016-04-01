@@ -140,9 +140,13 @@ article, section > *:not(header) {
 
 article {
 
+  > h2 {
+    @extend h1;
+  }
+
   //@media screen and (min-width: $screen-tablet-min) { // TODO decide whether to show on mobile
 
-  &#ihomer_philosophy::before {
+  &#home::before {
     @include icon-before('introduction');
   }
 
