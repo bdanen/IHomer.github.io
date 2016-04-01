@@ -184,3 +184,7 @@ aside {
 
   @include hidden-phone();
 }
+
+.fa.contact-icon {
+  min-width: 1.5em;
+}
