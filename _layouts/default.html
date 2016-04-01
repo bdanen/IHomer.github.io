@@ -1,6 +1,4 @@
 ---
-crew: Twenty-six
-work: TODO
 ---
 <!DOCTYPE html>
 <html>
@@ -24,12 +22,13 @@ work: TODO
 
     <nav id="menu">
       <div class="nav-top-bar">
-        <a class="logo" href="{{ site.baseurl }}"></a>
+        <a class="logo" href="{{ "/" | prepend: site.baseurl }}"></a>
         <div class="menu-button">
           <button id="menu-close"><i class="fa fa-close"></i></button>
         </div>
       </div>
       <ul>
+        <li><a href="{{ "/" | prepend: site.baseurl }}">Home</a></li>
         <li><a href="{{ "/crew" | prepend: site.baseurl }}">Crew</a></li>
         <li><a href="{{ "/work" | prepend: site.baseurl }}">Work</a></li>
         <li><a href="{{ "/anders" | prepend: site.baseurl }}">Een beetje anders</a></li>

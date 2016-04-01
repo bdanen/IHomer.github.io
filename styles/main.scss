@@ -150,7 +150,7 @@ article {
 
   //@media screen and (min-width: $screen-tablet-min) { // TODO decide whether to show on mobile
 
-  &#home::before {
+  &#filosofie::before {
     @include icon-before('introduction');
   }
 
@@ -163,6 +163,10 @@ article {
     &::before {
       @include icon-before('location');
     }
+  }
+
+  &#wat_wij_doen::before {
+    @include icon-before('combinedexperience');
   }
   //}
 }
