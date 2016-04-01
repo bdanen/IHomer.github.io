@@ -2,6 +2,17 @@
   <section id="toc" class="hidden-phone">
     <header>Table of contents</header>
 
+    {% if page.title != 'Home' %}
+    <div data-toggle-target="home">
+      <div>
+        <h3>&nbsp;</h3>
+        <h2 class="toggle" data-toggle="home">
+          <a href="{{ "/" | prepend: site.baseurl }}">Home</a>
+        </h2>
+      </div>
+    </div>
+    {% endif %}
+
     <div data-toggle-target="crew">
       <div>
         <h3>{{site.crew}}</h3>
@@ -21,7 +32,9 @@
     <div data-toggle-target="work">
       <div>
         <h3>{{site.work}}</h3>
-        <h2 class="toggle" data-toggle="work"><a href="{{ "/work" | prepend: site.baseurl }}">Work</a></h2>
+        <h2 class="toggle" data-toggle="work">
+          <a href="{{ "/work" | prepend: site.baseurl }}">Work</a>
+        </h2>
       </div>
 
       <div>
@@ -36,7 +49,7 @@
 
     <div data-toggle-target="anders">
       <div>
-        <h3>{{site.anders}}</h3>
+        <h3>&nbsp;</h3>
         <h2 class="toggle" data-toggle="anders">Een beetje anders</h2>
       </div>
     </div>
