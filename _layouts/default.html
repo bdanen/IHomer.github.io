@@ -30,10 +30,10 @@ work: TODO
         </div>
       </div>
       <ul>
-        <li><a href="/crew">Crew</a></li>
-        <li><a href="/work">Work</a></li>
-        <li><a href="/anders">Een beetje anders</a></li>
-        <li><a href="{{ site.baseurl }}/contact">Contact</a></li>
+        <li><a href="{{ "/crew" | prepend: site.baseurl }}">Crew</a></li>
+        <li><a href="{{ "/work" | prepend: site.baseurl }}">Work</a></li>
+        <li><a href="{{ "/anders" | prepend: site.baseurl }}">Een beetje anders</a></li>
+        <li><a href="{{ "/contact" | prepend: site.baseurl }}">Contact</a></li>
       </ul>
     </nav>
 
