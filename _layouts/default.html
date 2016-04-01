@@ -48,7 +48,9 @@
     <main>
       <header>{{page.title}}</header>
 
-      {{content}}
+      <article id="{{page.title | replace: ' ', '_' | downcase}}">
+        {{ content }}
+      </article>
 
       {% include footer.html %}
     </main>

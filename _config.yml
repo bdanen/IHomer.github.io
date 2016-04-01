@@ -9,6 +9,8 @@ description: >
   inspirerende werkvorm ontstaan.
 baseurl: ""
 url: https://ihomer.github.io # the base hostname & protocol for your site
+permalink: /:categories/:title.html
+excerpt_separator: <!--more-->
 crew: 26
 work: TODO
 
