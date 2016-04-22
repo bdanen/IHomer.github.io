@@ -168,6 +168,10 @@ article {
   &#wat_wij_doen::before {
     @include icon-before('combinedexperience');
   }
+
+  &#pacific_blue::before {
+    @include icon-before('software_process_productivity');
+  }
   //}
 }
 
