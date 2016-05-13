@@ -233,3 +233,13 @@ aside {
     }
   }
 }
+
+table {
+  td {
+    &:first-child {
+      padding-right: 25px;
+      text-transform: uppercase;
+      font-weight: bold;
+    }
+  }
+}

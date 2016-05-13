@@ -1,6 +1,13 @@
 ---
-layout: work
+layout: crew
 title: Mark Manders
 categories: crew
+avatar: mark.jpg
+
+city: Deurne
+passion: passie
+food: eten
+vacation: vakantie
+tv: tv
+expertise: expertise
 ---
-Ik ben Mark Manders en ik doe Donald Duck na
