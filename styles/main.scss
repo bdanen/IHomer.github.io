@@ -24,6 +24,21 @@ p a {
   color: $body-color;
 }
 
+h1, h2, h3, li {
+  word-wrap: break-word;
+}
+
+h1, h2, h3 {
+  & > a {
+    text-decoration: none;
+    color: $title-color;
+
+    &:visited, &:active, &:focus, &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
 .hidden-phone {
   @include hidden-phone();
 }
@@ -148,8 +163,6 @@ article {
     @extend h1;
   }
 
-  //@media screen and (min-width: $screen-tablet-min) { // TODO decide whether to show on mobile
-
   &#filosofie::before {
     @include icon-before('introduction');
   }
@@ -169,10 +182,31 @@ article {
     @include icon-before('combinedexperience');
   }
 
+  &#wie_wij_zijn {
+    h2 {
+      margin: 50px 0;
+
+      &::before {
+        @include list-before();
+        color: $list-before-color;
+        font-weight: $light-font-weight;
+        font-size: 16px;
+        content: "\ff0d"; // large minus sign
+
+        @media screen and (max-width: $screen-mobile-max) {
+          color: $title-color;
+        }
+      }
+    }
+  }
+
+  &#wie_wij_zijn::before {
+    @include icon-before('crewmembers');
+  }
+
   &#pacific_blue::before {
     @include icon-before('software_process_productivity');
   }
-  //}
 }
 
 aside {
