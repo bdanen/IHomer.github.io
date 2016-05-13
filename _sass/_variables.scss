@@ -3,16 +3,16 @@ $screen-mobile-max: 991px;
 $screen-desktop-min: 992px;
 $screen-desktop-max: 1919px;
 $screen-large-desktop-min: 1920px;
-$main-fixed-width: (0.4 * #{$screen-large-desktop-min});
+$main-fixed-width: unquote("0.4 * #{$screen-large-desktop-min}");
 $aside-large-desktop-width: calc(100% - (#{$main-fixed-width}));
 $background-gray-gradient: linear-gradient(to bottom, #B8B9C0, #DDDEE6) no-repeat center center fixed;
 
 $light-font-weight: 300;
-$section-title-font: italic #{$light-font-weight} 14px 'Open Sans', sans-serif;
-$section-number-font: normal 400 14px monaco, Consolas, 'Lucida Console', monospace;
+$section-title-font: italic #{$light-font-weight} 14px "Open Sans", sans-serif;
+$section-number-font: normal 400 14px monaco, Consolas, "Lucida Console", monospace;
 $section-title-color: #CCC;
 $list-before-color: $section-title-color;
 $title-color: #000;
 $body-color: #6A6A6A;
 
-$icon-dir: '/icons'
+$icon-dir: "/icons";
