@@ -128,8 +128,11 @@ PLATFORMS
 
 DEPENDENCIES
   github-pages
-  redcarpet
-  rouge (= 1.9)
+  jekyll-coffeescript
+  jekyll-feed
+  jekyll-sitemap
+  kramdown
+  rouge
 
 BUNDLED WITH
-   1.11.2
+   1.12.3
