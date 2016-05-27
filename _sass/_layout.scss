@@ -97,14 +97,14 @@ main {
         @extend h1;
         font-weight: bold;
         text-decoration: none;
-      }
 
-      &::before {
-        @include list-before();
-        color: $list-before-color;
-        font-weight: $light-font-weight;
-        font-size: 16px;
-        content: "\ff0d"; // large minus sign
+        &::before {
+          @include list-before();
+          color: $list-before-color;
+          font-weight: $light-font-weight;
+          font-size: 16px;
+          content: "\ff0d"; // large minus sign
+        }
       }
     }
   }
