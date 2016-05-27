@@ -23,6 +23,7 @@ exclude:
   - Gemfile
   - Gemfile.lock
   - .editorconfig
+  - README.md
 gems:
   - jekyll-sitemap
   - jekyll-feed
