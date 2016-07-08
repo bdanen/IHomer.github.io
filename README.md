@@ -4,7 +4,7 @@
 Zorg ervoor dat ruby is geïnstalleerd en dat het `gem` commando aan je
 `PATH` is toegevoegd.  
 Voer daarna de volgende commando's uit (vanuit de website map):
-- `(sudo) gem install bundler`
+- `(sudo) gem install jekyll bundler`
 - `bundle install`
 - `bundle exec jekyll serve`
 
